@@ -1,4 +1,6 @@
+import 'package:find_your_game/widgets/show_games.dart';
 import 'package:flutter/material.dart';
+import 'form_stepper_screen.dart';
 import '../widgets/max_widh_container.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -38,7 +40,7 @@ class HomeScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => Container(), // ToDO
+                      builder: (context) => FormStepperScreen(), // ToDO
                     ),
                   );
                 },
@@ -61,7 +63,15 @@ class HomeScreen extends StatelessWidget {
                   textStyle: TextStyle(fontSize: 26),
                   padding: const EdgeInsets.all(20),
                 ),
-              )
+              ),
+              SizedBox(height: 40),
+              Text(
+                'C\'est vrai que vous en avez des jeux !',
+                style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+                textAlign: TextAlign.center,
+              ),
+              SizedBox(height: 40),
+              ShowGames(),
             ],
           ),
         ),
