@@ -12,7 +12,7 @@ class MaxWidthContainer extends StatelessWidget {
         return Center(
           child: ConstrainedBox(
             constraints: BoxConstraints(
-              maxWidth: constraints.maxWidth > 800 ? 800 : constraints.maxWidth,
+              maxWidth: constraints.maxWidth > 860 ? 830 : constraints.maxWidth,
             ),
             child: Padding(
               padding: const EdgeInsets.all(30),
